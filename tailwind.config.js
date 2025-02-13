@@ -7,11 +7,3 @@ module.exports = {
   },
   plugins: [],
 }
-
-// Create: postcss.config.js
-module.exports = {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  }
-}
