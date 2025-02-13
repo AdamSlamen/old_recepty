@@ -13,7 +13,21 @@ function Recipes() {
     const matchesCategory = category === '' || recipe.category === category;
     return matchesSearch && matchesCategory;
   });
-
+const Recipes = ({ toggleFavorite, favorites }) => {
+  return (
+    <div>
+      <h1>Recipes</h1>
+      {recipes.map((recipe) => (
+        <div key={recipe.id} className="recipe-card">
+          <h2>{recipe.title}</h2>
+          <button onClick={() => toggleFavorite(recipe)}>
+            {favorites.some((fav) => fav.id === recipe.id) ? "Unfavorite" : "Favorite"}
+          </button>
+        </div>
+      ))}
+    </div>
+  );
+};
   const categories = [...new Set(recipes.map(recipe => recipe.category))];
 
   return (
