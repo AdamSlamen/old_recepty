@@ -2,7 +2,7 @@
   "name": "dishdelights",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://[your-username].github.io/recepty",
+  "homepage": "https://dendysvk.github.io/Recepty/",
   "dependencies": {
     "@heroicons/react": "^2.0.18",
     "@testing-library/jest-dom": "^5.17.0",
